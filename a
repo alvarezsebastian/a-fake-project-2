@@ -1,0 +1,11 @@
+
+const pullRequestInfo = {
+	merged: true
+};
+
+const labelType = 
+	pullRequestInfo.merged ? 'success' :
+	pullRequestInfo.state === 'close' ? 'danger' :
+	'info';
+
+console.log(labelType);
